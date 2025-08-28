@@ -1,0 +1,23 @@
+SELECT * FROM forum_posts WHERE date BETWEEN '2048-04-01' AND '2048-04-30'; -- searches the dates between specified
+
+SELECT * FROM forum_accounts WHERE username = 'smart-money-44'; -- since we know the username we don't have to guess or look around / last name = Steele
+
+SELECT * from emptystack_accounts WHERE last_name = 'Steele'; -- two accounts the first one (triple-cart-38 / password456) works in mainframe and it creates new tables after signing in
+
+SELECT * from emptystack_messages WHERE "to" = 'triple-cart-38' AND subject ILIKE '%taxi%'; -- used ILIKE to find any words describing the project (from: your-boss-99 / id: LidWj / subject: Project TAXI)
+
+SELECT * from emptystack_accounts WHERE "username" = 'your-boss-99'; -- stealing this dudes password to see what he's hiding in mainframe (username: your-boss-99 / password: notagaincarter) !HES THE ADMIN NEED PROJECT ID!
+
+SELECT * from emptystack_projects WHERE code ILIKE 'ta%'; -- could have been more specific but this worked. (projectId: DczE0v2b)
+
+-- Welcome, your-boss-99.
+-- Project ID: DczE0v2b
+-- Initiating project shutdown sequence...
+-- 5...
+-- 4...
+-- 3...
+-- 2...
+-- 1...
+-- Project shutdown complete.
+
+-- The citizens of the city can rest easy tonight. Unfortunately for them, they still have to go to work in the morning...
